@@ -28,6 +28,11 @@ import (
 	"time"
 )
 
+const (
+	defaultCC  = "clang"
+	defaultCXX = "clang++"
+)
+
 var cmdBuild = &Command{
 	UsageLine: "build [-o output] [-i] [build flags] [packages]",
 	Short:     "compile packages and dependencies",
